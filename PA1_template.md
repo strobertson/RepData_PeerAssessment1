@@ -77,7 +77,7 @@ ggplot(data = daily_sum, aes(x = steps)) +
            title = "Total steps per day") 
 ```
 
-![](figure/Total Daily Steps Histogram-1.png)<!-- -->
+![](figure/total_daily_steps_histogram-1.png)<!-- -->
 
 2. Calculate and report the **mean** and **median** total number of steps taken per day
 
@@ -111,7 +111,7 @@ ggplot(data = steps_per_interval, aes(x = interval, y = steps)) +
            title = "Mean steps per daily interval")
 ```
 
-![](figure/Average Daily Activity-1.png)<!-- -->
+![](figure/average_daily_activity-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?  
 
@@ -189,7 +189,7 @@ fig_2 <- ggplot(data = impute_daily_sum, aes(x = steps)) +
 ggarrange(fig_1, fig_2, labels = c("Total steps per day - Original Data", "Total steps per day - Imputed Data"), font.label = list(size = 10, face = "bold"), ncol = 1, nrow = 2)
 ```
 
-![](figure/Compare histogram of total step and mean and median-1.png)<!-- -->
+![](figure/compare_histogram-1.png)<!-- -->
 
 ```r
 # Calculate mean and median number of steps per day
@@ -234,4 +234,4 @@ ggplot(data = week_mean,
            title = "Mean steps per interval for weekdays and weekends")
 ```
 
-![](figure/Weekday vs Weekend Mean Steps-1.png)<!-- -->
+![](figure/weekday_vs_weekend_mean_steps-1.png)<!-- -->
