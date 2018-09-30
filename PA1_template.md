@@ -219,7 +219,7 @@ activity_impute$week <- as.factor(ifelse(weekdays(activity$date) %in% c("Saturda
 
 ```r
 # Create a summary table of mean steps per interval
-week_mean <- activity_impute %>% group_by(interval, week) %>% summarise(steps = sum(steps))
+week_mean <- activity_impute %>% group_by(interval, week) %>% summarise(steps = mean(steps))
 
 # Turns interval into integer for easier graphing
 week_mean$interval <- as.integer(levels(week_mean$interval)[week_mean$interval])
